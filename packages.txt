@@ -1,9 +1,0 @@
-pip install customtkinter==0.3
-
-conda install -c anaconda pillow
-
-pip install auth-token
-
-conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
-
-conda install -c conda-forge diffusers
