@@ -8,4 +8,5 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvi
 
 conda install -c conda-forge diffusers
 
-pip install transformers
+pip install transformers 
+(Not sure)
