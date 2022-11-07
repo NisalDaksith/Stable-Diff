@@ -2,7 +2,7 @@ import tkinter as tk
 import customtkinter as ctk
 
 from PIL import ImageTk
-#from authtoken import auth_token
+from authtoken import auth_token
 
 from torch import autocast
 import torch
@@ -21,7 +21,7 @@ def generate():
 
 modelid = "CompVis/stable-diffusion-v1-4"
 device = "cuda"
-pipe = StableDiffusionPipeline.from_pretrained(modelid, revision = "fp16", torch_dtypes=torch.float16,use_auth_token=True)#, use_auth_token = auth_token)
+pipe = StableDiffusionPipeline.from_pretrained(modelid, revision = "fp16", torch_dtypes=torch.float16, use_auth_token = auth_token)
 pipe.to(device)
 #######################################################################   Creating the UI of the App   #######################################################################
 
